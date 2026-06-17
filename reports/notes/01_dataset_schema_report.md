@@ -1,7 +1,7 @@
 # Dataset Schema Report
 
 - Dataset name: `uitnlp/vietnamese_students_feedback`
-- Checked at: `2026-06-18T00:31:35`
+- Checked at: `2026-06-18T01:03:58`
 - Project root: `d:\project-ml-engineering\nlp-phobert-student-feedback`
 
 ## Available splits
@@ -41,7 +41,7 @@
 ```json
 {
   "dataset_name": "uitnlp/vietnamese_students_feedback",
-  "created_at": "2026-06-18T00:31:29",
+  "created_at": "2026-06-18T01:03:51",
   "sentiment": {
     "source_column": "sentiment",
     "verified_from_hf_features": true,

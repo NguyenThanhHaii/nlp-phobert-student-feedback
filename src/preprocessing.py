@@ -1,11 +1,22 @@
-"""Basic text preprocessing utilities.
+"""Text preprocessing utilities for baseline experiments.
 
-Keep preprocessing conservative. Do not change labels or meaning.
+This module intentionally keeps preprocessing minimal for clean baseline models.
+Do not remove accents, normalize abbreviations, or correct spelling here. Those
+steps are part of later noisy-data and optional normalization experiments.
 """
 
+from __future__ import annotations
 
-def normalize_whitespace(text: str) -> str:
-    """Normalize repeated whitespace in a text string."""
-    if text is None:
+import pandas as pd
+
+
+def basic_text_clean(text: object) -> str:
+    """Convert input to string and strip surrounding whitespace."""
+    if pd.isna(text):
         return ""
-    return " ".join(str(text).split())
+    return str(text).strip()
+
+
+def prepare_text_series(series: pd.Series) -> pd.Series:
+    """Prepare a pandas Series of text for baseline vectorizers."""
+    return series.apply(basic_text_clean)
