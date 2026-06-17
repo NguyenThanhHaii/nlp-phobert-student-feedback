@@ -1,0 +1,23 @@
+project:
+  seed: 42
+
+model:
+  name: "vinai/phobert-base"
+  max_length: null  # Fill after Stage 1 EDA.
+  task: null        # sentiment or topic
+
+training:
+  epochs: 3
+  batch_size: 16
+  learning_rate: 0.00002
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  evaluation_strategy: "epoch"
+  save_strategy: "epoch"
+  metric_for_best_model: "macro_f1"
+  load_best_model_at_end: true
+
+paths:
+  model_dir: "models"
+  tables_dir: "reports/tables"
+  figures_dir: "reports/figures"

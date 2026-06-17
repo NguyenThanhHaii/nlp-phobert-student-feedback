@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+jupyter
+ipykernel
+datasets
+transformers
+torch
+pyyaml
+tqdm
+joblib

@@ -1,0 +1,26 @@
+project:
+  name: "nlp-phobert-student-feedback"
+  seed: 42
+
+dataset:
+  source: "huggingface"
+  huggingface_name: "uitnlp/vietnamese_students_feedback"
+  text_column: null
+  sentiment_column: null
+  topic_column: null
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  schema_report: "reports/notes/dataset_schema_report.md"
+  label_mapping: "configs/label_mapping.json"
+  split_summary: "reports/tables/split_summary.csv"
+
+verification:
+  require_dataset_schema_report: true
+  require_label_mapping: true
+  require_split_summary: true
+
+fallback_policy:
+  if_topic_label_missing: "reduce_scope_to_sentiment_only"
+  if_label_encoding_is_integer: "create_label_mapping_json"

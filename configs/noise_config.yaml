@@ -1,0 +1,32 @@
+project:
+  seed: 42
+
+noise_types:
+  - no_accent
+  - domain_abbreviation
+  - teencode_colloquial
+  - typo
+  - elongation
+  - mixed_noise
+
+severity:
+  low_max_changed_token_ratio: 0.2
+  medium_max_changed_token_ratio: 0.4
+  high_min_changed_token_ratio: 0.4
+
+mixed_noise:
+  seed: 42
+  max_noise_types_per_sentence: 3
+  max_changed_token_ratio: 0.4
+  mixed_no_accent: true
+  char_noise_choice:
+    typo: 0.5
+    elongation: 0.5
+  apply_order:
+    - domain_abbreviation
+    - teencode_colloquial
+    - char_noise
+    - no_accent
+
+metadata:
+  changed_spans_format: "json_string"
