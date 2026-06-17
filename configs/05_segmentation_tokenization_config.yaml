@@ -1,0 +1,27 @@
+# Stage 5 — Segmentation and PhoBERT tokenization analysis
+
+source:
+  clean_test_path: data/processed/test.csv
+  noisy_dir: data/noisy
+  noisy_file_pattern: "04_test_*.csv"
+
+output:
+  reports_tables_dir: reports/tables
+  reports_figures_dir: reports/figures
+  reports_notes_dir: reports/notes
+
+tokenization:
+  phobert_model_name: vinai/phobert-base
+  use_phobert_tokenizer: true
+
+segmentation:
+  # Supported:
+  # - whitespace: always available, stable fallback.
+  # - py_vncorenlp: optional; requires local VnCoreNLP setup.
+  method: whitespace
+  py_vncorenlp_model_dir: data/external/vncorenlp
+
+analysis:
+  top_examples_per_noise_type: 15
+  high_inflation_quantile: 0.95
+  changed_only_analysis: true
