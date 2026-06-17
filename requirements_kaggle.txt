@@ -1,10 +1,16 @@
-datasets
-transformers
-accelerate
-evaluate
-scikit-learn
-pandas
-numpy
-pyyaml
-tqdm
-joblib
+# Kaggle training dependencies
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+joblib==1.4.2
+
+matplotlib==3.9.2
+seaborn==0.13.2
+
+datasets==2.21.0
+transformers==4.44.2
+accelerate==0.33.0
+evaluate==0.4.2
+
+PyYAML==6.0.2
+tqdm==4.66.5

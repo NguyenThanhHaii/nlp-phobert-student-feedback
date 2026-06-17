@@ -5,16 +5,5 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - ipykernel
   - pip:
-      - numpy
-      - pandas
-      - matplotlib
-      - scikit-learn
-      - jupyter
-      - datasets
-      - transformers
-      - torch
-      - pyyaml
-      - tqdm
-      - joblib
+      - -r requirements.txt

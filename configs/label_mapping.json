@@ -1,5 +1,23 @@
 {
-  "sentiment": {},
-  "topic": {},
-  "notes": "Filled after Stage 1 dataset verification."
+  "dataset_name": "uitnlp/vietnamese_students_feedback",
+  "created_at": "2026-06-18T00:31:29",
+  "sentiment": {
+    "source_column": "sentiment",
+    "verified_from_hf_features": true,
+    "id_to_name": {
+      "0": "negative",
+      "1": "neutral",
+      "2": "positive"
+    }
+  },
+  "topic": {
+    "source_column": "topic",
+    "verified_from_hf_features": true,
+    "id_to_name": {
+      "0": "lecturer",
+      "1": "training_program",
+      "2": "facility",
+      "3": "others"
+    }
+  }
 }
