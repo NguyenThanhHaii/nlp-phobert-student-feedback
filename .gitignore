@@ -7,6 +7,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -59,3 +60,6 @@ Thumbs.db
 kaggle.json
 *.pem
 *.key
+
+!02_baseline_results_summary.csv
+!02_best_baseline_by_dev_macro_f1.csv

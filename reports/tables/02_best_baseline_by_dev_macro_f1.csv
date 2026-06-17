@@ -1,0 +1,3 @@
+﻿task,model_name,split,accuracy,macro_f1,weighted_f1,train_time_sec,predict_time_sec,num_train_samples,num_eval_samples,model_path
+sentiment,tfidf_char_svm,dev,0.8989260897030954,0.7706402421215786,0.9027313149551408,1.2359442000160925,0.0863353000022471,11426,1583,d:\project-ml-engineering\nlp-phobert-student-feedback\models\sentiment\tfidf_char_svm.joblib
+topic,tfidf_word_svm,dev,0.86481364497789,0.7614813641461614,0.8656953420318806,0.3988077000249177,0.02784519997658208,11426,1583,d:\project-ml-engineering\nlp-phobert-student-feedback\models\topic\tfidf_word_svm.joblib
