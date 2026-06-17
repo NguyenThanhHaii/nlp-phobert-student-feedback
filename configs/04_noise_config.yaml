@@ -1,0 +1,92 @@
+# Stage 4 — Controlled noise generation configuration
+
+seed: 42
+source_split_path: data/processed/test.csv
+
+output:
+  noisy_dir: data/noisy
+  audit_dir: data/audit
+  reports_tables_dir: reports/tables
+  reports_figures_dir: reports/figures
+  reports_notes_dir: reports/notes
+
+tokenization:
+  phobert_model_name: vinai/phobert-base
+  use_phobert_tokenizer: true
+
+audit:
+  sample_per_noise_type: 25
+
+severity:
+  low_max_ratio: 0.20
+  medium_max_ratio: 0.40
+
+noise_types:
+  - no_accent
+  - domain_abbreviation
+  - teencode_colloquial
+  - typo
+  - elongation
+  - mixed_noise
+
+domain_abbreviation:
+  max_replacements_per_sentence: 2
+  replacements:
+    "giảng viên": "gv"
+    "giáo viên": "gv"
+    "sinh viên": "sv"
+    "học sinh": "hs"
+    "học phần": "hp"
+    "môn học": "mh"
+    "bài tập": "bt"
+    "bài kiểm tra": "bkt"
+    "kiểm tra": "kt"
+    "thực hành": "th"
+    "lý thuyết": "lt"
+    "cơ sở vật chất": "csvc"
+    "phòng học": "ph"
+    "phòng máy": "pm"
+    "chương trình đào tạo": "ctdt"
+
+teencode_colloquial:
+  max_replacements_per_sentence: 2
+  replacements:
+    "không":
+      - "ko"
+      - "k"
+    "được":
+      - "dc"
+      - "đc"
+    "luôn":
+      - "lun"
+    "rất":
+      - "r"
+    "nhiều":
+      - "nhìu"
+    "với":
+      - "vs"
+    "biết":
+      - "bít"
+
+typo:
+  max_typos_per_sentence: 1
+  prefer_diacritic_typo: true
+  min_token_length: 4
+
+elongation:
+  max_elongations_per_sentence: 1
+  min_token_length: 3
+  repeat_count: 2
+
+mixed_noise:
+  max_noise_types_per_sentence: 3
+  max_changed_token_ratio: 0.40
+  mixed_no_accent: false
+  char_noise_choice:
+    typo: 0.5
+    elongation: 0.5
+  apply_order:
+    - domain_abbreviation
+    - teencode_colloquial
+    - char_noise
+    - no_accent
