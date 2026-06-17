@@ -29,10 +29,8 @@ data/audit/*
 !data/audit/.gitkeep
 
 # Models and large artifacts
-models/sentiment/*
-!models/sentiment/.gitkeep
-models/topic/*
-!models/topic/.gitkeep
+models/*
+!models/.gitkeep
 *.pt
 *.pth
 *.bin

@@ -1,6 +1,6 @@
 # Baseline Modeling Report
 
-- Created at: `2026-06-18T01:04:45`
+- Created at: `2026-06-18T04:20:57`
 - Data source: processed UIT-VSFC splits from Stage 1
 - Main metric: Macro-F1
 - Model selection split: dev
@@ -25,12 +25,12 @@ Only minimal text preprocessing is used: convert to string and strip whitespace.
 
 | task | model_name | accuracy | macro_f1 | weighted_f1 | train_time_sec | predict_time_sec |
 | --- | --- | --- | --- | --- | --- | --- |
-| sentiment | majority_class | 0.5022 | 0.2229 | 0.3358 | 0.004 | 0.0004 |
-| sentiment | tfidf_word_svm | 0.892 | 0.7289 | 0.887 | 0.4663 | 0.0873 |
-| sentiment | tfidf_char_svm | 0.874 | 0.7354 | 0.8755 | 1.2359 | 0.2026 |
-| topic | majority_class | 0.7233 | 0.2099 | 0.6072 | 0.0041 | 0.0001 |
-| topic | tfidf_word_svm | 0.8585 | 0.7509 | 0.8598 | 0.3988 | 0.0551 |
-| topic | tfidf_char_svm | 0.8326 | 0.7299 | 0.8396 | 1.3946 | 0.2103 |
+| sentiment | majority_class | 0.5022 | 0.2229 | 0.3358 | 0.0065 | 0.0002 |
+| sentiment | tfidf_word_svm | 0.892 | 0.7289 | 0.887 | 1.0087 | 0.145 |
+| sentiment | tfidf_char_svm | 0.874 | 0.7354 | 0.8755 | 2.6158 | 0.4349 |
+| topic | majority_class | 0.7233 | 0.2099 | 0.6072 | 0.0102 | 0.0001 |
+| topic | tfidf_word_svm | 0.8585 | 0.7509 | 0.8598 | 0.954 | 0.1313 |
+| topic | tfidf_char_svm | 0.8326 | 0.7299 | 0.8396 | 2.8257 | 0.4344 |
 
 
 ## Best baseline by dev Macro-F1
