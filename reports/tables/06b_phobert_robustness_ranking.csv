@@ -1,0 +1,3 @@
+﻿task,model_type,model_name,mean_absolute_macro_f1_drop,max_absolute_macro_f1_drop,mean_relative_macro_f1_drop_pct
+sentiment,phobert,phobert_base,0.11227814117639318,0.5129416325783764,13.536110109600843
+topic,phobert,phobert_base,0.12967235392958887,0.5421826326874022,16.104808082462544
