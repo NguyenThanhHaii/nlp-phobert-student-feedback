@@ -1,0 +1,116 @@
+# Stage 8 — Optional Normalization Experiment
+
+source:
+  clean_test_path: data/processed/test.csv
+  noisy_dir: data/noisy
+  noisy_file_pattern: "04_test_*.csv"
+  label_mapping_path: configs/label_mapping.json
+
+models:
+  baseline_root: models/baselines
+  baseline_fallback_roots:
+    - models
+
+evaluation:
+  tasks:
+    - sentiment
+    - topic
+  include_changed_only: true
+  primary_metric: macro_f1
+
+output:
+  normalized_dir: data/normalized
+  reports_tables_dir: reports/tables
+  reports_figures_dir: reports/figures
+  reports_notes_dir: reports/notes
+
+normalization:
+  # Applies all enabled rules in a fixed order.
+  apply_order:
+    - reduce_elongation
+    - domain_abbreviation
+    - teencode
+    - no_accent_phrase
+    - common_typo
+
+  reduce_elongation:
+    enabled: true
+    # Replace character repetitions length >= 3 with one character.
+    min_repeat: 3
+
+  domain_abbreviation:
+    enabled: true
+    replacements:
+      gv: "giảng viên"
+      sv: "sinh viên"
+      hs: "học sinh"
+      hp: "học phần"
+      mh: "môn học"
+      bt: "bài tập"
+      bkt: "bài kiểm tra"
+      kt: "kiểm tra"
+      th: "thực hành"
+      lt: "lý thuyết"
+      csvc: "cơ sở vật chất"
+      ph: "phòng học"
+      pm: "phòng máy"
+      ctdt: "chương trình đào tạo"
+
+  teencode:
+    enabled: true
+    replacements:
+      ko: "không"
+      k: "không"
+      k0: "không"
+      khong: "không"
+      dc: "được"
+      đc: "được"
+      duoc: "được"
+      lun: "luôn"
+      r: "rất"
+      nhìu: "nhiều"
+      nhieu: "nhiều"
+      vs: "với"
+      bít: "biết"
+      bit: "biết"
+
+  no_accent_phrase:
+    enabled: true
+    replacements:
+      "giang vien": "giảng viên"
+      "giao vien": "giáo viên"
+      "sinh vien": "sinh viên"
+      "hoc phan": "học phần"
+      "mon hoc": "môn học"
+      "bai tap": "bài tập"
+      "kiem tra": "kiểm tra"
+      "thuc hanh": "thực hành"
+      "ly thuyet": "lý thuyết"
+      "co so vat chat": "cơ sở vật chất"
+      "phong hoc": "phòng học"
+      "phong may": "phòng máy"
+      "chuong trinh dao tao": "chương trình đào tạo"
+      "nhiet tinh": "nhiệt tình"
+      "de hieu": "dễ hiểu"
+      "kho hieu": "khó hiểu"
+      "ro rang": "rõ ràng"
+      "day du": "đầy đủ"
+      "can thiet": "cần thiết"
+      "thoi gian": "thời gian"
+      "qua nhieu": "quá nhiều"
+      "khong tot": "không tốt"
+      "rat tot": "rất tốt"
+      "rat hay": "rất hay"
+      "tot": "tốt"
+      "kem": "kém"
+      "hay": "hay"
+
+  common_typo:
+    enabled: true
+    replacements:
+      "hỉu": "hiểu"
+      "hiu": "hiểu"
+      "nhiêt": "nhiệt"
+      "nhiêt tình": "nhiệt tình"
+      "ro rang": "rõ ràng"
+      "dê hiểu": "dễ hiểu"
