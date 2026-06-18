@@ -1,0 +1,7 @@
+﻿task,model_type,model_name,mean_absolute_macro_f1_drop,max_absolute_macro_f1_drop,mean_relative_macro_f1_drop_pct
+sentiment,baseline,majority_class,0.0,0.0,0.0
+sentiment,baseline,tfidf_char_svm,0.06776007577648269,0.33032607272415115,9.21466009967131
+sentiment,baseline,tfidf_word_svm,0.07566806136794055,0.3692192421687093,10.38107111920347
+topic,baseline,majority_class,0.0,0.0,0.0
+topic,baseline,tfidf_char_svm,0.1060581845967354,0.44242446745920466,14.530523628073647
+topic,baseline,tfidf_word_svm,0.10922936234474205,0.48956348333125127,14.546024669386027

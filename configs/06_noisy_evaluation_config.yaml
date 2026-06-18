@@ -1,0 +1,32 @@
+# Stage 6 — Clean vs Noisy Evaluation for all models
+
+source:
+  clean_test_path: data/processed/test.csv
+  noisy_dir: data/noisy
+  noisy_file_pattern: "04_test_*.csv"
+  label_mapping_path: configs/label_mapping.json
+
+models:
+  baseline_root: models/baselines
+  # Backward-compatible fallback in case Stage 2 models still exist in old paths.
+  baseline_fallback_roots:
+    - models
+  phobert_root: models/phobert
+  phobert_model_name: vinai/phobert-base
+
+evaluation:
+  tasks:
+    - sentiment
+    - topic
+  primary_metric: macro_f1
+  max_length: 128
+  phobert_batch_size: 32
+  run_baselines: true
+  run_phobert: false
+  include_changed_only: true
+  device: auto
+
+output:
+  reports_tables_dir: reports/tables
+  reports_figures_dir: reports/figures
+  reports_notes_dir: reports/notes
