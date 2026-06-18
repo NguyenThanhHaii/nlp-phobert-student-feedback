@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NLP Student Feedback Demo</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Vietnamese Student Feedback NLP</p>
+        <h1>Phân tích cảm xúc và phân loại chủ đề phản hồi sinh viên</h1>
+        <p class="subtitle">
+          Demo học thuật cho phản hồi tiếng Việt phi chuẩn. Hỗ trợ PhoBERT nếu checkpoint có sẵn,
+          tự fallback sang baseline TF-IDF/SVM khi cần.
+        </p>
+      </div>
+      <div class="status-card">
+        <div class="status-dot"></div>
+        <div>
+          <strong>API status</strong>
+          <span id="healthText">Đang kiểm tra...</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <section class="card input-card">
+        <div class="card-header">
+          <h2>Nhập phản hồi</h2>
+          <button type="button" id="clearBtn" class="ghost-btn">Xóa</button>
+        </div>
+
+        <textarea id="feedbackText" rows="7" placeholder="Ví dụ: gv giảng rất nhiệt tình, bài tập hơi nhìu nhưng dễ hiểu"></textarea>
+
+        <div class="examples">
+          <button type="button" data-example="Giảng viên dạy rất nhiệt tình, nội dung dễ hiểu và có nhiều ví dụ thực tế.">Tích cực</button>
+          <button type="button" data-example="Phòng học nóng, máy chiếu mờ và âm thanh không rõ.">Cơ sở vật chất</button>
+          <button type="button" data-example="gv day de hieu nhung bt nhieu qua">Phi chuẩn</button>
+          <button type="button" data-example="Chương trình đào tạo còn nặng lý thuyết, cần tăng thực hành.">Chương trình</button>
+        </div>
+
+        <div class="controls">
+          <label>
+            Task
+            <select id="taskSelect">
+              <option value="both">Cả sentiment + topic</option>
+              <option value="sentiment">Sentiment</option>
+              <option value="topic">Topic</option>
+            </select>
+          </label>
+
+          <label>
+            Model
+            <select id="modelSelect">
+              <option value="auto">Auto</option>
+              <option value="phobert">PhoBERT</option>
+              <option value="baseline">TF-IDF/SVM baseline</option>
+            </select>
+          </label>
+
+          <label class="checkbox">
+            <input id="normalizeCheck" type="checkbox" />
+            <span>Chuẩn hóa input</span>
+          </label>
+        </div>
+
+        <button type="button" id="predictBtn" class="primary-btn">Dự đoán</button>
+      </section>
+
+      <section class="card result-card">
+        <h2>Kết quả</h2>
+        <div id="resultBox" class="result-box muted">
+          Chưa có kết quả. Nhập phản hồi và bấm “Dự đoán”.
+        </div>
+      </section>
+    </section>
+
+    <section class="card info-card">
+      <h2>Ghi chú demo</h2>
+      <p>
+        Demo này dùng cho trình bày đồ án. Mục tiêu là minh họa pipeline:
+        phản hồi sinh viên → tùy chọn normalization → sentiment/topic prediction.
+      </p>
+      <p>
+        Với dữ liệu bỏ dấu hoặc teencode, bật “Chuẩn hóa input” để quan sát sự thay đổi.
+        Kết quả demo không thay thế các bảng đánh giá chính ở Stage 6 và Stage 8.
+      </p>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
