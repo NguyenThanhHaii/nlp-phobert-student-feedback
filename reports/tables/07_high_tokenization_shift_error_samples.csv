@@ -1,0 +1,301 @@
+﻿task,model_type,model_name,noise_type,evaluation_scope,id,true_label,pred_label,severity,changed_token_ratio,subword_delta,subword_inflation_ratio,original_text,noisy_text,text
+topic,baseline,tfidf_char_svm,elongation,full,test_1588,others,training_program,medium,0.3333333333333333,4.0,2.333333333333333,quá nhiều .,quá nhiềuuu .,quá nhiềuuu .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_1588,others,training_program,medium,0.3333333333333333,4.0,2.333333333333333,quá nhiều .,quá nhiềuuu .,quá nhiềuuu .
+topic,baseline,tfidf_word_svm,elongation,full,test_1588,others,training_program,medium,0.3333333333333333,4.0,2.333333333333333,quá nhiều .,quá nhiềuuu .,quá nhiềuuu .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_1588,others,training_program,medium,0.3333333333333333,4.0,2.333333333333333,quá nhiều .,quá nhiềuuu .,quá nhiềuuu .
+sentiment,baseline,tfidf_char_svm,mixed_noise,full,test_1431,negative,positive,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,baseline,tfidf_char_svm,mixed_noise,changed_only,test_1431,negative,positive,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_1431,negative,neutral,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1431,negative,neutral,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_1431,training_program,others,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_1431,training_program,others,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_1431,training_program,others,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1431,training_program,others,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,phobert,phobert_base,mixed_noise,full,test_1431,negative,neutral,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_1431,negative,neutral,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,phobert,phobert_base,mixed_noise,full,test_1431,training_program,lecturer,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_1431,training_program,lecturer,high,0.75,4.0,2.0,bài tập nhiều .,bt nhìuuu .,bt nhìuuu .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_1431,negative,positive,medium,0.25,4.0,2.0,bài tập nhiều .,bài tập nhiềuuu .,bài tập nhiềuuu .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_1431,negative,positive,medium,0.25,4.0,2.0,bài tập nhiều .,bài tập nhiềuuu .,bài tập nhiềuuu .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,baseline,tfidf_char_svm,mixed_noise,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+sentiment,baseline,tfidf_char_svm,mixed_noise,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_1431,negative,neutral,medium,0.25,4.0,2.0,bài tập nhiều .,bài tập nhiềuuu .,bài tập nhiềuuu .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_1431,negative,neutral,medium,0.25,4.0,2.0,bài tập nhiều .,bài tập nhiềuuu .,bài tập nhiềuuu .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_2717,lecturer,training_program,medium,0.25,4.0,2.0,ghi hơi nhiều .,ghi hơi nhìuuu .,ghi hơi nhìuuu .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_2717,lecturer,training_program,medium,0.25,4.0,2.0,ghi hơi nhiều .,ghi hơi nhìuuu .,ghi hơi nhìuuu .
+sentiment,phobert,phobert_base,elongation,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,phobert,phobert_base,elongation,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhiềuuu ví dụ .,nhiềuuu ví dụ .
+sentiment,phobert,phobert_base,mixed_noise,full,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_2603,neutral,positive,medium,0.25,4.0,2.0,nhiều ví dụ .,nhìuuu ví dụ .,nhìuuu ví dụ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_89,negative,neutral,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_1588,negative,neutral,high,0.6666666666666666,3.0,2.0,quá nhiều .,quááá nhìu .,quááá nhìu .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_89,negative,neutral,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1588,negative,neutral,high,0.6666666666666666,3.0,2.0,quá nhiều .,quááá nhìu .,quááá nhìu .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_89,lecturer,training_program,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_1588,others,lecturer,high,0.6666666666666666,3.0,2.0,quá nhiều .,quááá nhìu .,quááá nhìu .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_89,lecturer,training_program,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_1588,others,lecturer,high,0.6666666666666666,3.0,2.0,quá nhiều .,quááá nhìu .,quááá nhìu .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_89,lecturer,others,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_89,lecturer,others,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+sentiment,phobert,phobert_base,mixed_noise,full,test_89,negative,neutral,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_89,negative,neutral,high,0.6666666666666666,3.0,2.0,không slide .,k slideee .,k slideee .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_662,positive,negative,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_670,positive,neutral,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_662,positive,negative,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_670,positive,neutral,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,baseline,tfidf_char_svm,mixed_noise,full,test_662,positive,negative,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_char_svm,mixed_noise,full,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,baseline,tfidf_char_svm,mixed_noise,changed_only,test_662,positive,negative,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_char_svm,mixed_noise,changed_only,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_662,positive,neutral,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_844,neutral,negative,medium,0.3333333333333333,3.0,2.0,lý thuyết .,lý thuyếttt .,lý thuyếttt .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_938,neutral,negative,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_2093,negative,neutral,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_662,positive,neutral,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_844,neutral,negative,medium,0.3333333333333333,3.0,2.0,lý thuyết .,lý thuyếttt .,lý thuyếttt .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_938,neutral,negative,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_2093,negative,neutral,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_662,positive,neutral,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_938,neutral,negative,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_662,positive,neutral,medium,0.3333333333333333,3.0,2.0,dứt khoát .,dứttt khoát .,dứttt khoát .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_938,neutral,negative,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_char_svm,elongation,full,test_670,lecturer,others,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,baseline,tfidf_char_svm,elongation,full,test_798,lecturer,others,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+topic,baseline,tfidf_char_svm,elongation,full,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_char_svm,elongation,full,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,baseline,tfidf_char_svm,elongation,full,test_2392,lecturer,others,medium,0.3333333333333333,3.0,2.0,cô xinh .,cô xinhhh .,cô xinhhh .
+topic,baseline,tfidf_char_svm,elongation,full,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,baseline,tfidf_char_svm,elongation,full,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_670,lecturer,others,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_798,lecturer,others,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2392,lecturer,others,medium,0.3333333333333333,3.0,2.0,cô xinh .,cô xinhhh .,cô xinhhh .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_798,lecturer,others,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_798,lecturer,others,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,baseline,tfidf_word_svm,elongation,full,test_670,lecturer,others,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,baseline,tfidf_word_svm,elongation,full,test_718,lecturer,others,medium,0.3333333333333333,3.0,2.0,thầy tốt .,thầyyy tốt .,thầyyy tốt .
+topic,baseline,tfidf_word_svm,elongation,full,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_word_svm,elongation,full,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,baseline,tfidf_word_svm,elongation,full,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_670,lecturer,others,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_718,lecturer,others,medium,0.3333333333333333,3.0,2.0,thầy tốt .,thầyyy tốt .,thầyyy tốt .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_938,others,training_program,medium,0.3333333333333333,3.0,2.0,cầu kỳ .,cầuuu kỳ .,cầuuu kỳ .
+sentiment,phobert,phobert_base,elongation,full,test_670,positive,neutral,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+sentiment,phobert,phobert_base,elongation,full,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,phobert,phobert_base,elongation,full,test_2093,negative,neutral,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+sentiment,phobert,phobert_base,elongation,changed_only,test_670,positive,neutral,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+sentiment,phobert,phobert_base,elongation,changed_only,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,phobert,phobert_base,elongation,changed_only,test_2093,negative,neutral,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+sentiment,phobert,phobert_base,mixed_noise,full,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_798,positive,neutral,medium,0.3333333333333333,3.0,2.0,mến cô .,mếnnn cô .,mếnnn cô .
+topic,phobert,phobert_base,elongation,full,test_670,lecturer,training_program,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,phobert,phobert_base,elongation,full,test_844,training_program,others,medium,0.3333333333333333,3.0,2.0,lý thuyết .,lý thuyếttt .,lý thuyếttt .
+topic,phobert,phobert_base,elongation,full,test_2093,lecturer,others,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+topic,phobert,phobert_base,elongation,full,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,phobert,phobert_base,elongation,full,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,phobert,phobert_base,elongation,full,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,phobert,phobert_base,elongation,changed_only,test_670,lecturer,training_program,medium,0.3333333333333333,3.0,2.0,dạy được .,dạyyy được .,dạyyy được .
+topic,phobert,phobert_base,elongation,changed_only,test_844,training_program,others,medium,0.3333333333333333,3.0,2.0,lý thuyết .,lý thuyếttt .,lý thuyếttt .
+topic,phobert,phobert_base,elongation,changed_only,test_2093,lecturer,others,medium,0.3333333333333333,3.0,2.0,trễ giờ .,trễễễ giờ .,trễễễ giờ .
+topic,phobert,phobert_base,elongation,changed_only,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,phobert,phobert_base,elongation,changed_only,test_2533,lecturer,others,medium,0.3333333333333333,3.0,2.0,đi trễ .,đi trễễễ .,đi trễễễ .
+topic,phobert,phobert_base,elongation,changed_only,test_2676,others,lecturer,medium,0.3333333333333333,3.0,2.0,chuyên sâu .,chuyênnn sâu .,chuyênnn sâu .
+topic,phobert,phobert_base,mixed_noise,full,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_2388,training_program,others,medium,0.3333333333333333,3.0,2.0,khó hiểu .,khó hiểuuu .,khó hiểuuu .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_2078,positive,neutral,high,0.5,2.0,2.0,tuyệt .,tuyệttt .,tuyệttt .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_2078,positive,neutral,high,0.5,2.0,2.0,tuyệt .,tuyệttt .,tuyệttt .
+sentiment,phobert,phobert_base,elongation,full,test_2078,positive,neutral,high,0.5,2.0,2.0,tuyệt .,tuyệttt .,tuyệttt .
+sentiment,phobert,phobert_base,elongation,changed_only,test_2078,positive,neutral,high,0.5,2.0,2.0,tuyệt .,tuyệttt .,tuyệttt .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_1411,neutral,negative,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1411,neutral,negative,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+sentiment,phobert,phobert_base,mixed_noise,full,test_1411,neutral,negative,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_1411,neutral,negative,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,phobert,phobert_base,mixed_noise,full,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_1411,training_program,others,high,0.6666666666666666,5.0,1.8333333333333333,làm được nhiều bài tập .,làm dc nhiềuuu bt .,làm dc nhiềuuu bt .
+sentiment,baseline,tfidf_char_svm,elongation,full,test_1719,negative,neutral,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+sentiment,baseline,tfidf_char_svm,elongation,changed_only,test_1719,negative,neutral,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_1719,negative,neutral,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_1719,negative,neutral,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+topic,baseline,tfidf_char_svm,elongation,full,test_1719,training_program,others,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_1719,training_program,others,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+topic,phobert,phobert_base,elongation,full,test_1719,training_program,others,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+topic,phobert,phobert_base,elongation,changed_only,test_1719,training_program,others,medium,0.3333333333333333,4.0,1.8,nhiều seminar .,nhiềuuu seminar .,nhiềuuu seminar .
+topic,baseline,tfidf_char_svm,elongation,full,test_1223,lecturer,others,low,0.2,4.0,1.8,nhiều khi đi muộn .,nhiềuuu khi đi muộn .,nhiềuuu khi đi muộn .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_1223,lecturer,others,low,0.2,4.0,1.8,nhiều khi đi muộn .,nhiềuuu khi đi muộn .,nhiềuuu khi đi muộn .
+sentiment,phobert,phobert_base,elongation,full,test_531,neutral,positive,low,0.2,4.0,1.8,nhiều bài thuyết trình .,nhiềuuu bài thuyết trình .,nhiềuuu bài thuyết trình .
+sentiment,phobert,phobert_base,elongation,changed_only,test_531,neutral,positive,low,0.2,4.0,1.8,nhiều bài thuyết trình .,nhiềuuu bài thuyết trình .,nhiềuuu bài thuyết trình .
+sentiment,phobert,phobert_base,mixed_noise,full,test_531,neutral,positive,low,0.2,4.0,1.8,nhiều bài thuyết trình .,nhìuuu bài thuyết trình .,nhìuuu bài thuyết trình .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_531,neutral,positive,low,0.2,4.0,1.8,nhiều bài thuyết trình .,nhìuuu bài thuyết trình .,nhìuuu bài thuyết trình .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_1594,positive,neutral,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_1594,positive,neutral,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+topic,baseline,tfidf_word_svm,no_accent,full,test_1594,lecturer,others,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+topic,baseline,tfidf_word_svm,no_accent,changed_only,test_1594,lecturer,others,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+sentiment,phobert,phobert_base,no_accent,full,test_1594,positive,neutral,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_1594,positive,neutral,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+topic,phobert,phobert_base,no_accent,full,test_1594,lecturer,others,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+topic,phobert,phobert_base,no_accent,changed_only,test_1594,lecturer,others,high,0.8888888888888888,7.0,1.7777777777777777,truyền đạt được nhiều kiến thức tổng quát .,truyen dat duoc nhieu kien thuc tong quat .,truyen dat duoc nhieu kien thuc tong quat .
+sentiment,baseline,tfidf_char_svm,no_accent,full,test_1308,neutral,positive,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+sentiment,baseline,tfidf_char_svm,no_accent,full,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,baseline,tfidf_char_svm,no_accent,changed_only,test_1308,neutral,positive,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+sentiment,baseline,tfidf_char_svm,no_accent,changed_only,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_919,positive,neutral,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_2498,positive,neutral,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_919,positive,neutral,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_2498,positive,neutral,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,baseline,tfidf_char_svm,no_accent,full,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,baseline,tfidf_char_svm,no_accent,full,test_1820,training_program,others,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+topic,baseline,tfidf_char_svm,no_accent,full,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,baseline,tfidf_char_svm,no_accent,changed_only,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,baseline,tfidf_char_svm,no_accent,changed_only,test_1820,training_program,others,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+topic,baseline,tfidf_char_svm,no_accent,changed_only,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,baseline,tfidf_word_svm,no_accent,full,test_919,lecturer,others,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+topic,baseline,tfidf_word_svm,no_accent,full,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,baseline,tfidf_word_svm,no_accent,full,test_1820,training_program,others,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+topic,baseline,tfidf_word_svm,no_accent,full,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,baseline,tfidf_word_svm,no_accent,changed_only,test_919,lecturer,others,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+topic,baseline,tfidf_word_svm,no_accent,changed_only,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,baseline,tfidf_word_svm,no_accent,changed_only,test_1820,training_program,others,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+topic,baseline,tfidf_word_svm,no_accent,changed_only,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+sentiment,phobert,phobert_base,no_accent,full,test_919,positive,neutral,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+sentiment,phobert,phobert_base,no_accent,full,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,phobert,phobert_base,no_accent,full,test_2498,positive,neutral,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_919,positive,neutral,high,0.75,3.0,1.75,truyền đạt tốt .,truyen dat tot .,truyen dat tot .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_1820,positive,neutral,high,0.75,3.0,1.75,luyện tập tốt .,luyen tap tot .,luyen tap tot .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_2498,positive,neutral,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,phobert,phobert_base,no_accent,full,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,phobert,phobert_base,no_accent,full,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+topic,phobert,phobert_base,no_accent,changed_only,test_1308,lecturer,others,high,0.75,3.0,1.75,cách truyền đạt .,cach truyen dat .,cach truyen dat .
+topic,phobert,phobert_base,no_accent,changed_only,test_2498,training_program,others,high,0.75,3.0,1.75,thực tiễn tốt .,thuc tien tot .,thuc tien tot .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_2563,positive,neutral,high,0.5,3.0,1.75,luôn đúng giờ .,lun đúnggg giờ .,lun đúnggg giờ .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_2563,positive,neutral,high,0.5,3.0,1.75,luôn đúng giờ .,lun đúnggg giờ .,lun đúnggg giờ .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_546,lecturer,others,high,0.5,3.0,1.75,cô rất xinh .,cô r xinhhh .,cô r xinhhh .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_546,lecturer,others,high,0.5,3.0,1.75,cô rất xinh .,cô r xinhhh .,cô r xinhhh .
+sentiment,phobert,phobert_base,mixed_noise,full,test_546,positive,neutral,high,0.5,3.0,1.75,cô rất xinh .,cô r xinhhh .,cô r xinhhh .
+sentiment,phobert,phobert_base,mixed_noise,full,test_2563,positive,neutral,high,0.5,3.0,1.75,luôn đúng giờ .,lun đúnggg giờ .,lun đúnggg giờ .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_546,positive,neutral,high,0.5,3.0,1.75,cô rất xinh .,cô r xinhhh .,cô r xinhhh .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_2563,positive,neutral,high,0.5,3.0,1.75,luôn đúng giờ .,lun đúnggg giờ .,lun đúnggg giờ .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_106,positive,negative,medium,0.25,3.0,1.75,quá nhiệt tình .,quá nhiệt tìnhhh .,quá nhiệt tìnhhh .
+sentiment,baseline,tfidf_word_svm,elongation,full,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_106,positive,negative,medium,0.25,3.0,1.75,quá nhiệt tình .,quá nhiệt tìnhhh .,quá nhiệt tìnhhh .
+sentiment,baseline,tfidf_word_svm,elongation,changed_only,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,baseline,tfidf_word_svm,mixed_noise,full,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,baseline,tfidf_word_svm,mixed_noise,changed_only,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,baseline,tfidf_char_svm,elongation,full,test_399,training_program,others,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+topic,baseline,tfidf_char_svm,elongation,full,test_546,lecturer,others,medium,0.25,3.0,1.75,cô rất xinh .,cô rất xinhhh .,cô rất xinhhh .
+topic,baseline,tfidf_char_svm,elongation,full,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,baseline,tfidf_char_svm,elongation,full,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,baseline,tfidf_char_svm,elongation,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_char_svm,elongation,full,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_399,training_program,others,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_546,lecturer,others,medium,0.25,3.0,1.75,cô rất xinh .,cô rất xinhhh .,cô rất xinhhh .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_char_svm,elongation,changed_only,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,baseline,tfidf_char_svm,mixed_noise,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,baseline,tfidf_char_svm,mixed_noise,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_word_svm,elongation,full,test_520,lecturer,training_program,medium,0.25,3.0,1.75,có nhiệt huyết .,có nhiệt huyếttt .,có nhiệt huyếttt .
+topic,baseline,tfidf_word_svm,elongation,full,test_570,training_program,lecturer,medium,0.25,3.0,1.75,slide chi tiết .,slideee chi tiết .,slideee chi tiết .
+topic,baseline,tfidf_word_svm,elongation,full,test_1316,others,training_program,medium,0.25,3.0,1.75,học không hiểu .,học không hiểuuu .,học không hiểuuu .
+topic,baseline,tfidf_word_svm,elongation,full,test_2030,lecturer,others,medium,0.25,3.0,1.75,dạy rất tốt .,dạyyy rất tốt .,dạyyy rất tốt .
+topic,baseline,tfidf_word_svm,elongation,full,test_2712,others,training_program,medium,0.25,3.0,1.75,chép bài nhiều .,chéppp bài nhiều .,chéppp bài nhiều .
+topic,baseline,tfidf_word_svm,elongation,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_word_svm,elongation,full,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,baseline,tfidf_word_svm,elongation,full,test_2984,others,lecturer,medium,0.25,3.0,1.75,hoạt động nhóm .,hoạt động nhómmm .,hoạt động nhómmm .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_520,lecturer,training_program,medium,0.25,3.0,1.75,có nhiệt huyết .,có nhiệt huyếttt .,có nhiệt huyếttt .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_570,training_program,lecturer,medium,0.25,3.0,1.75,slide chi tiết .,slideee chi tiết .,slideee chi tiết .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_1316,others,training_program,medium,0.25,3.0,1.75,học không hiểu .,học không hiểuuu .,học không hiểuuu .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2030,lecturer,others,medium,0.25,3.0,1.75,dạy rất tốt .,dạyyy rất tốt .,dạyyy rất tốt .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2712,others,training_program,medium,0.25,3.0,1.75,chép bài nhiều .,chéppp bài nhiều .,chéppp bài nhiều .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,baseline,tfidf_word_svm,elongation,changed_only,test_2984,others,lecturer,medium,0.25,3.0,1.75,hoạt động nhóm .,hoạt động nhómmm .,hoạt động nhómmm .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_1906,lecturer,training_program,medium,0.25,3.0,1.75,dạy đầy đủ .,dạyyy đầy đủ .,dạyyy đầy đủ .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_word_svm,mixed_noise,full,test_2862,lecturer,others,medium,0.25,3.0,1.75,dạy kỹ càng .,dạyyy kỹ càng .,dạyyy kỹ càng .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_1906,lecturer,training_program,medium,0.25,3.0,1.75,dạy đầy đủ .,dạyyy đầy đủ .,dạyyy đầy đủ .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,baseline,tfidf_word_svm,mixed_noise,changed_only,test_2862,lecturer,others,medium,0.25,3.0,1.75,dạy kỹ càng .,dạyyy kỹ càng .,dạyyy kỹ càng .
+sentiment,phobert,phobert_base,elongation,full,test_106,positive,negative,medium,0.25,3.0,1.75,quá nhiệt tình .,quá nhiệt tìnhhh .,quá nhiệt tìnhhh .
+sentiment,phobert,phobert_base,elongation,full,test_399,neutral,negative,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+sentiment,phobert,phobert_base,elongation,full,test_2273,neutral,positive,medium,0.25,3.0,1.75,thầy dạy ổn .,thầyyy dạy ổn .,thầyyy dạy ổn .
+sentiment,phobert,phobert_base,elongation,full,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,phobert,phobert_base,elongation,changed_only,test_106,positive,negative,medium,0.25,3.0,1.75,quá nhiệt tình .,quá nhiệt tìnhhh .,quá nhiệt tìnhhh .
+sentiment,phobert,phobert_base,elongation,changed_only,test_399,neutral,negative,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+sentiment,phobert,phobert_base,elongation,changed_only,test_2273,neutral,positive,medium,0.25,3.0,1.75,thầy dạy ổn .,thầyyy dạy ổn .,thầyyy dạy ổn .
+sentiment,phobert,phobert_base,elongation,changed_only,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,phobert,phobert_base,mixed_noise,full,test_2273,neutral,positive,medium,0.25,3.0,1.75,thầy dạy ổn .,thầy dạyyy ổn .,thầy dạyyy ổn .
+sentiment,phobert,phobert_base,mixed_noise,full,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_2273,neutral,positive,medium,0.25,3.0,1.75,thầy dạy ổn .,thầy dạyyy ổn .,thầy dạyyy ổn .
+sentiment,phobert,phobert_base,mixed_noise,changed_only,test_2283,negative,positive,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,phobert,phobert_base,elongation,full,test_399,training_program,others,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+topic,phobert,phobert_base,elongation,full,test_570,training_program,lecturer,medium,0.25,3.0,1.75,slide chi tiết .,slideee chi tiết .,slideee chi tiết .
+topic,phobert,phobert_base,elongation,full,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,phobert,phobert_base,elongation,full,test_1316,others,lecturer,medium,0.25,3.0,1.75,học không hiểu .,học không hiểuuu .,học không hiểuuu .
+topic,phobert,phobert_base,elongation,full,test_1370,others,lecturer,medium,0.25,3.0,1.75,khá dễ hiểu .,khá dễ hiểuuu .,khá dễ hiểuuu .
+topic,phobert,phobert_base,elongation,full,test_2030,lecturer,training_program,medium,0.25,3.0,1.75,dạy rất tốt .,dạyyy rất tốt .,dạyyy rất tốt .
+topic,phobert,phobert_base,elongation,full,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,phobert,phobert_base,elongation,full,test_2712,others,lecturer,medium,0.25,3.0,1.75,chép bài nhiều .,chéppp bài nhiều .,chéppp bài nhiều .
+topic,phobert,phobert_base,elongation,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,phobert,phobert_base,elongation,full,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,phobert,phobert_base,elongation,full,test_2984,others,lecturer,medium,0.25,3.0,1.75,hoạt động nhóm .,hoạt động nhómmm .,hoạt động nhómmm .
+topic,phobert,phobert_base,elongation,changed_only,test_399,training_program,others,medium,0.25,3.0,1.75,làm việc nhóm .,làm việc nhómmm .,làm việc nhómmm .
+topic,phobert,phobert_base,elongation,changed_only,test_570,training_program,lecturer,medium,0.25,3.0,1.75,slide chi tiết .,slideee chi tiết .,slideee chi tiết .
+topic,phobert,phobert_base,elongation,changed_only,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,phobert,phobert_base,elongation,changed_only,test_1316,others,lecturer,medium,0.25,3.0,1.75,học không hiểu .,học không hiểuuu .,học không hiểuuu .
+topic,phobert,phobert_base,elongation,changed_only,test_1370,others,lecturer,medium,0.25,3.0,1.75,khá dễ hiểu .,khá dễ hiểuuu .,khá dễ hiểuuu .
+topic,phobert,phobert_base,elongation,changed_only,test_2030,lecturer,training_program,medium,0.25,3.0,1.75,dạy rất tốt .,dạyyy rất tốt .,dạyyy rất tốt .
+topic,phobert,phobert_base,elongation,changed_only,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,phobert,phobert_base,elongation,changed_only,test_2712,others,lecturer,medium,0.25,3.0,1.75,chép bài nhiều .,chéppp bài nhiều .,chéppp bài nhiều .
+topic,phobert,phobert_base,elongation,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,phobert,phobert_base,elongation,changed_only,test_2778,others,lecturer,medium,0.25,3.0,1.75,bơi rất vui .,bơi rấttt vui .,bơi rấttt vui .
+topic,phobert,phobert_base,elongation,changed_only,test_2984,others,lecturer,medium,0.25,3.0,1.75,hoạt động nhóm .,hoạt động nhómmm .,hoạt động nhómmm .
+topic,phobert,phobert_base,mixed_noise,full,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,phobert,phobert_base,mixed_noise,full,test_1906,lecturer,training_program,medium,0.25,3.0,1.75,dạy đầy đủ .,dạyyy đầy đủ .,dạyyy đầy đủ .
+topic,phobert,phobert_base,mixed_noise,full,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,phobert,phobert_base,mixed_noise,full,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_1006,others,lecturer,medium,0.25,3.0,1.75,tình huống hay .,tìnhhh huống hay .,tìnhhh huống hay .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_1906,lecturer,training_program,medium,0.25,3.0,1.75,dạy đầy đủ .,dạyyy đầy đủ .,dạyyy đầy đủ .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_2283,training_program,others,medium,0.25,3.0,1.75,yêu cầu cao .,yêu cầuuu cao .,yêu cầuuu cao .
+topic,phobert,phobert_base,mixed_noise,changed_only,test_2758,others,lecturer,medium,0.25,3.0,1.75,khá nhiệt tình .,khá nhiệt tìnhhh .,khá nhiệt tìnhhh .
+sentiment,baseline,tfidf_char_svm,no_accent,full,test_351,positive,neutral,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,baseline,tfidf_char_svm,no_accent,changed_only,test_351,positive,neutral,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_351,positive,negative,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_351,positive,negative,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,phobert,phobert_base,no_accent,full,test_351,positive,neutral,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_351,positive,neutral,high,0.8571428571428571,5.0,1.7142857142857142,truyền đạt kiến thức hiệu quả .,truyen dat kien thuc hieu qua .,truyen dat kien thuc hieu qua .
+sentiment,baseline,tfidf_char_svm,no_accent,full,test_2971,positive,negative,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .
+sentiment,baseline,tfidf_char_svm,no_accent,changed_only,test_2971,positive,negative,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .
+sentiment,baseline,tfidf_word_svm,no_accent,full,test_2971,positive,negative,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .
+sentiment,baseline,tfidf_word_svm,no_accent,changed_only,test_2971,positive,negative,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .
+sentiment,phobert,phobert_base,no_accent,full,test_2971,positive,neutral,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .
+sentiment,phobert,phobert_base,no_accent,changed_only,test_2971,positive,neutral,high,0.8888888888888888,6.0,1.6666666666666667,giáo viên truyền đạt kiến thức dễ hiểu .,giao vien truyen dat kien thuc de hieu .,giao vien truyen dat kien thuc de hieu .

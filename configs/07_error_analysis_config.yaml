@@ -1,0 +1,39 @@
+# Stage 7 — Error Analysis
+
+source:
+  clean_test_path: data/processed/test.csv
+  noisy_dir: data/noisy
+  noisy_file_pattern: "04_test_*.csv"
+
+  # Stage 6A baseline predictions.
+  baseline_predictions_path: reports/tables/06_model_predictions_all.csv
+
+  # Stage 6B PhoBERT predictions, extracted from Kaggle output zip.
+  phobert_predictions_light_path: reports/tables/06b_phobert_predictions_light.csv
+
+  # Stage 5 tokenization analysis.
+  tokenization_analysis_path: reports/tables/05_segmentation_tokenization_analysis.csv
+
+output:
+  reports_tables_dir: reports/tables
+  reports_figures_dir: reports/figures
+  reports_notes_dir: reports/notes
+
+analysis:
+  tasks:
+    - sentiment
+    - topic
+  primary_scope: full
+  top_error_samples_per_group: 30
+  top_confusion_pairs: 30
+  random_seed: 42
+
+  minority_or_difficult_classes:
+    sentiment:
+      - neutral
+    topic:
+      - facility
+      - others
+
+model_filter:
+  exclude_majority_from_samples: true
